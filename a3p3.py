@@ -74,14 +74,17 @@ def random_generator(a, b, c, m, r0, r1, n):
         #append next_val to result
         result.append(next_val)
         #shift current to prev and next_val to curr
-        prev = curr  # old R_{i+1} becomes new R_i
-        curr = next_val # new R_{i+2} becomes new R_{i+1}
+        # old R_{i+1} becomes new R_i
+        # new R_{i+2} becomes new R_{i+1}
+        prev, curr = curr, next_val
+
 
     return result
 
 def test():
     assert random_generator(3, 5, 9, 17, 11, 6, 3) == [14, 13, 16]
-    
+    #assert random_generator(3,5,9,17,11,6,0) == []
+
 
 from sys import flags
 
