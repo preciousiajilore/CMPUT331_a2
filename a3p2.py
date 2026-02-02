@@ -4,7 +4,7 @@
 #
 # CMPUT 331 Student Submission License
 # Version 1.0
-# Copyright 2026 <<Insert your name here>>
+# Copyright 2026 Precious Ajilore
 #
 # Redistribution is forbidden in all circumstances. Use of this software
 # without explicit authorization from the author is prohibited.
@@ -33,8 +33,13 @@
 """
 CMPUT 331 Assignment 3 Student Solution
 January 2026
-Author: <Your name here>
+Author: Precious Ajilore
 """
+#--------------------------------------------------------------
+#Affine Encryption:
+# c = (a*p + b) mod m 
+# where gcd(a, m) = 1, a is a coprime to m, b is any integer in the range [0, m-1]
+#--------------------------------------------------------------
 
 def affine_key_count(m):
     raise NotImplementedError
